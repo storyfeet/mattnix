@@ -6,6 +6,7 @@
 
 {
   nix.settings.experimental-features = ["nix-command" "flakes"];
+  programs.nix-ld.enable = true;
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
@@ -116,6 +117,13 @@ hardware.bluetooth.powerOnBoot = true;
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
+
+  environment.sessionVariables = {
+    PATH = [
+      "$HOME/.cargo/bin"
+      "$HOME/bin"
+    ];
+  };
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
