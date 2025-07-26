@@ -129,12 +129,14 @@ hardware.bluetooth.powerOnBoot = true;
   # $ nix search wget
   environment.systemPackages = with pkgs; [
 	neovim 
+	gnumake
 	inkscape 
 	gutenprint
 	nmap
 	fontforge-gtk
 	zig
 	git
+	ran
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
