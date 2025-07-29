@@ -137,6 +137,7 @@ hardware.bluetooth.powerOnBoot = true;
 	zig
 	git
 	ran
+	zed-editor
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
