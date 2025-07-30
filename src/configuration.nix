@@ -132,6 +132,8 @@ hardware.bluetooth.powerOnBoot = true;
 	gnumake
 	inkscape 
 	gutenprint
+	godot
+	bun
 	nmap
 	fontforge-gtk
 	zig
