@@ -11,6 +11,7 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
       ./xfce.nix
+	  ./users.nix
     ];
 
   # Bootloader.
@@ -103,14 +104,6 @@ hardware.bluetooth.powerOnBoot = true;
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
 
-  # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.matthew = {
-    isNormalUser = true;
-    description = "matthew";
-    extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [
-    #  thunderbird
-    ]; };	
 
   # Install firefox.
   programs.firefox.enable = true;
