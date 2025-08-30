@@ -133,6 +133,7 @@ hardware.bluetooth.powerOnBoot = true;
 	git
 	ran
 	zed-editor
+	obs-studio
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
